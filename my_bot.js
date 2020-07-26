@@ -49,6 +49,7 @@ const GAMES = {
     'TFT': 'Teamfight Tactics',
     'TEAMFIGHT': 'Teamfight Tactics',
     'FIFA': 'Fifa',
+    'VALORANT': 'Valorant'
 }
 
 client.on('ready', () => {
