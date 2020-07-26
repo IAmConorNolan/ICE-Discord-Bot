@@ -3,6 +3,8 @@ const client = new Discord.Client()
 
 const BOT_PREFIX = '!'
 
+const BOT_COMMAND_CHANNEL_ID = '584072066643263493'
+
 const COLLEGES = {
     'CIT': 'CIT',
     'DCU': 'DCU',
@@ -61,7 +63,7 @@ client.on('message', (receivedMessage) => {
         return
     }
 
-    if (receivedMessage.content.startsWith(BOT_PREFIX)) {
+    if (receivedMessage.content.startsWith(BOT_PREFIX) && receivedMessage.channel.id === BOT_COMMAND_CHANNEL_ID) {
         processCommand(receivedMessage)
     }
 })
@@ -70,7 +72,7 @@ client.on('guildMemberAdd', member => {
     const embed = new Discord.MessageEmbed()
     .setColor('GREEN')
 	.setTitle('Welcome to Irish Collegiete Esports 👋')
-	.setDescription("There's just a little bit of setup to go through before you're finished with setup. Please navigate to the #roles channel to be assigned the corresponding role for your college. Once done, you'll be able to send messages. ")
+	.setDescription("There's just a little bit of setup to go through before you're finished. Please navigate to the #roles channel to be assigned the corresponding role for your college. Once done, you'll be able to send messages.")
 	.setThumbnail('https://pbs.twimg.com/profile_images/1218662670469038080/kQRDFoTe_400x400.jpg')
 	.setTimestamp()
 	.setFooter('Beep Boop 🤖', 'https://pbs.twimg.com/profile_images/1218662670469038080/kQRDFoTe_400x400.jpg');
@@ -81,7 +83,7 @@ client.on('guildMemberAdd', member => {
 const processCommand = (receivedMessage) => {
     const fullCommand = receivedMessage.content.substr(1)
     const splitCommand = fullCommand.split(" ")
-    const primaryCommand = splitCommand[0]
+    const primaryCommand = splitCommand[0].toLowerCase()
     const args = splitCommand.slice(1)
 
     switch (primaryCommand) {
