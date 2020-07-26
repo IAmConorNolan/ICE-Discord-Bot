@@ -44,8 +44,6 @@ const GAMES = {
     'R6': 'R6 Siege',
     'SIEGE': 'R6 Siege',
     'SMASH': 'Smash Ultimate',
-    'OVERWATCH': 'Overwatch',
-    'OW': 'Overwatch',
     'TFT': 'Teamfight Tactics',
     'TEAMFIGHT': 'Teamfight Tactics',
     'FIFA': 'Fifa',
