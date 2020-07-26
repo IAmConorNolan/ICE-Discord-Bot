@@ -35,6 +35,7 @@ const GAMES = {
     'LOL': 'League of Legends',
     'LEAGUE': 'League of Legends',
     'ROCKET': 'Rocket League',
+	'RL': 'Rocket League',
     'COUNTER-STRIKE': 'CS:GO',
     'COUNTERSTRIKE': 'CS:GO',
     'CS:GO': 'CS:GO',
