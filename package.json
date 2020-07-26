@@ -1,0 +1,25 @@
+{
+
+    "name": "ice-bot",
+  
+    "description": "ice-bot",
+  
+    "version": "0.0.0",
+  
+    "main": "my_bot.js",
+  
+    "scripts": {
+  
+      "start": "node my_bot.js.js"
+  
+    },
+  
+    "dependencies": {
+  
+      "discord.js": "12.2.0",
+  
+      "request": "2.81.0"
+  
+    }
+  
+  }
