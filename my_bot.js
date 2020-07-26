@@ -32,8 +32,8 @@ const COLLEGES = {
 }
 
 const GAMES = {
-    'LOL': 'Legends of Legends',
-    'LEAGUE': 'Legends of Legends',
+    'LOL': 'League of Legends',
+    'LEAGUE': 'League of Legends',
     'ROCKET': 'Rocket League',
     'COUNTER-STRIKE': 'CS:GO',
     'COUNTERSTRIKE': 'CS:GO',
