@@ -136,4 +136,4 @@ const gameCommand = (arguments, receivedMessage) => {
     }
 }
 
-client.login('NzM2OTYxMDg4MTYzMjgzMDQ1.Xx2afw.ZrNAFXty0ysKNhNZFASIxyGrLa0')
+client.login(process.env.BOT_TOKEN)
