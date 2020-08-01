@@ -29,14 +29,14 @@ const COLLEGES = {
     'DKIT': 'DKIT',
     'LIT': 'LIT',
     'UU': 'UU',
-	'Supporter':'Supporter,
-	}
+    'Supporter': 'Supporter',
+}
 
 const GAMES = {
     'LOL': 'League of Legends',
     'LEAGUE': 'League of Legends',
     'ROCKET': 'Rocket League',
-	'RL': 'Rocket League',
+    'RL': 'Rocket League',
     'COUNTER-STRIKE': 'CS:GO',
     'COUNTERSTRIKE': 'CS:GO',
     'CS:GO': 'CS:GO',
@@ -54,7 +54,7 @@ const GAMES = {
 
 client.on('ready', () => {
     console.log(`Connected as ${client.user.tag}!`)
-    
+
     client.user.setActivity("with Portals 🌀 v1.0.1")
 })
 
@@ -71,12 +71,12 @@ client.on('message', (receivedMessage) => {
 
 client.on('guildMemberAdd', member => {
     const embed = new Discord.MessageEmbed()
-    .setColor('GREEN')
-	.setTitle('Welcome to Irish Collegiete Esports 👋')
-	.setDescription("There's just a little bit of setup to go through before you're finished. Please navigate to the #roles channel to be assigned the corresponding role for your college. Once done, you'll be able to send messages.")
-	.setThumbnail('https://pbs.twimg.com/profile_images/1218662670469038080/kQRDFoTe_400x400.jpg')
-	.setTimestamp()
-	.setFooter('Beep Boop 🤖', 'https://pbs.twimg.com/profile_images/1218662670469038080/kQRDFoTe_400x400.jpg');
+        .setColor('GREEN')
+        .setTitle('Welcome to Irish Collegiete Esports 👋')
+        .setDescription("There's just a little bit of setup to go through before you're finished. Please navigate to the #roles channel to be assigned the corresponding role for your college. Once done, you'll be able to send messages.")
+        .setThumbnail('https://pbs.twimg.com/profile_images/1218662670469038080/kQRDFoTe_400x400.jpg')
+        .setTimestamp()
+        .setFooter('Beep Boop 🤖', 'https://pbs.twimg.com/profile_images/1218662670469038080/kQRDFoTe_400x400.jpg');
     member.send(embed)
 });
 
@@ -107,7 +107,7 @@ const collegeCommand = (arguments, receivedMessage) => {
         receivedMessage.author.send(`❌ You've specified an invalid college. Please check your command carefully. If you're sure you've entered it correctly, please contact an administrator to have your place of education added to our options.`)
         return
     }
-    
+
     const role = receivedMessage.guild.roles.cache.find(role => role.name === roleName)
 
     if (!role) {
@@ -130,7 +130,7 @@ const gameCommand = (arguments, receivedMessage) => {
         receivedMessage.author.send(`❌ You've specified an invalid game. Please check your command carefully. If you're sure you've entered it correctly, please contact an administrator to have it added to our options.`)
         return
     }
-    
+
     const role = receivedMessage.guild.roles.cache.find(role => role.name === roleName)
 
     if (!role) {
