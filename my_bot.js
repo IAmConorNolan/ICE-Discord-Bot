@@ -30,6 +30,7 @@ const COLLEGES = {
     'LIT': 'LIT',
     'UU': 'UU',
     'Supporter': 'Supporter',
+    'alumni': 'alumni',
 }
 
 const GAMES = {
@@ -55,7 +56,7 @@ const GAMES = {
 client.on('ready', () => {
     console.log(`Connected as ${client.user.tag}!`)
 
-    client.user.setActivity("with Portals 🌀 v1.0.3")
+    client.user.setActivity("with Portals 🌀 v1.0.4")
 })
 
 client.on('message', (receivedMessage) => {
