@@ -29,7 +29,8 @@ const COLLEGES = {
     'DKIT': 'DKIT',
     'LIT': 'LIT',
     'UU': 'UU',
-}
+	'Supporter':'Supporter,
+	}
 
 const GAMES = {
     'LOL': 'League of Legends',
